@@ -1,0 +1,12 @@
+<h1>{{ titulo }}</h1>
+
+<img width="100px" src="{{ urlImagem }}">
+
+<p>A soma de 1 + 1 é igual a {{ 1 + 1 }}</p>
+<p>A soma de 1 + 1 é igual a {{ resultadoUmMaiUm() }}</p>
+
+<p>Valor atual: {{ valorAtual }}</p>
+<button (click)="maisUm()" [disabled]="desabilitado">Mais UM!</button>
+
+<input [(ngModel)]="valorInput">
+<p>valor do input: {{ valorInput }}</p>
